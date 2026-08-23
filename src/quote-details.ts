@@ -1,5 +1,5 @@
+import'./quote-details.css';
 const money=(n:number)=>Number(n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-let installed=false;
 async function enhanceQuotes(){
   if(location.pathname!=='/app')return;
   const heading=[...document.querySelectorAll('h1')].find(x=>x.textContent?.trim()==='Orçamentos');
